@@ -1,0 +1,22 @@
+version: '2.1'
+services:
+  database:
+      image: mysql:5.6
+      ports:
+        - "3306:3306"
+      environment:
+        - MYSQL_ROOT_PASSWORD=pingu123
+        - MYSQL_DATABASE=todo
+        - MYSQL_USER=todo
+        - MYSQL_PASSWORD=pingu123
+        - DATABASE_PORT=3306
+  todo:
+     image:   tsongpon/todo:0.0.1-SNAPSHOT
+     depends_on:
+        - database
+     ports:
+        - "8090:8090"
+     environment:
+        - DATABASE_HOST=database
+        - DATABASE_USER=todo
+        - DATABASE_PASSWORD=pingu123
