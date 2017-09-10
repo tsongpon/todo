@@ -15,9 +15,4 @@ public class TodoApplicationTests {
 	public void contextLoads() {
 	}
 
-	@Test
-	public void makeFail() {
-		Assert.assertEquals(1,2);
-	}
-
 }
