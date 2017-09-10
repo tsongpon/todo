@@ -23,7 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<docker.image.name>tsongpon/todo</docker.image.name>
-		<docker.image.tag>${project.version}</docker.image.tag>
+		<docker.image.tag>${env.BUILD_NAME}</docker.image.tag>
 	</properties>
 
 	<dependencies>
