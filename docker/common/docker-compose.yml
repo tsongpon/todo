@@ -11,7 +11,7 @@
 #        - MYSQL_PASSWORD=pingu123
 #        - DATABASE_PORT=3306
 todo:
-     image:   tsongpon/todo:0.0.1-SNAPSHOT
+     image:   tsongpon/todo:${BUILD_NAME}
      mem_limit: 1073741824
      ports:
         - "8090:8090"
