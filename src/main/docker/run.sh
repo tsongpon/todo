@@ -1,8 +1,8 @@
 #!/bin/sh
 echo "********************************************************"
-echo "Waiting for the database to start  on port 3306"
+echo "Waiting for the database $DB_HOST to start  on port 3306"
 echo "********************************************************"
-
+sleep 1m
 echo "********************************************************"
 echo "Starting Todo Service"
 echo "********************************************************"

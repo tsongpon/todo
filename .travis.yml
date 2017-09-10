@@ -30,7 +30,9 @@ before_install:
 - sudo chmod +x /usr/local/bin/ecs-cli
 - export BUILD_NAME=todo-$TRAVIS_BRANCH-$(date -u "+%Y%m%d%H%M%S")-$TRAVIS_BUILD_NUMBER
 - export CONTAINER_IP=13.229.97.65
+- export DB_HOST=todo-db.cwng6q80blt8.ap-southeast-1.rds.amazonaws.com
 - export PLATFORM_TEST_NAME="todo-platform-tests"
+- export SPRING_PROFILES_ACTIVE=aws
 script:
 - sh travis_scripts/tag_build.sh
 - sh travis_scripts/build_services.sh
