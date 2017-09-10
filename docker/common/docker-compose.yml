@@ -11,10 +11,10 @@
 #        - MYSQL_PASSWORD=pingu123
 #        - DATABASE_PORT=3306
 todo:
-     image:   tsongpon/todo:${BUILD_NAME}
+     image:   tsongpon/todo:todo-master-20170910151235-11
      mem_limit: 1073741824
      ports:
         - "8090:8090"
-    environment:
-      DB_USER: ${DB_USER}
-      DB_PASSWORD: ${DB_PASSWORD}
+     environment:
+        DB_USER: ${DB_USER}
+        DB_PASSWORD: ${DB_PASSWORD}
